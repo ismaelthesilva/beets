@@ -13,7 +13,7 @@ exports.up = (pgm) => {
       type: "uuid",
       notNull: true,
       references: "users(id)",
-      onDelete: "CASCADE", // Delete posts when user is deleted
+      onDelete: "CASCADE",
     },
     title: {
       type: "varchar(255)",
